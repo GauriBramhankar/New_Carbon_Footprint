@@ -23,7 +23,7 @@ st.sidebar.markdown(
             margin: 1.5rem auto -4rem auto;
         }
         section[data-testid="stSidebar"] {
-            background-color: #d6f5ec;
+            background-color: #ffffff;
         }
         .stApp {
             background-color: white;
