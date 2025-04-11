@@ -106,6 +106,6 @@ Let's get started! **Click Next →** to begin creating your profile and take th
 # --- Simulated Redirect to Profile using query param ---
 col1, col2, col3 = st.columns([1, 6, 1])
 with col2:
-if st.button("Next →", use_container_width=False):
-st.experimental_set_query_params(page="Profile")
-st.markdown('<meta http-equiv="refresh" content="0;url=./Profile">', unsafe_allow_html=True)
+   if st.button("Next →", use_container_width=False):
+      st.experimental_set_query_params(page="Profile")
+      st.markdown('<meta http-equiv="refresh" content="0;url=./Profile">', unsafe_allow_html=True)
