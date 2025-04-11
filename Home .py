@@ -10,22 +10,14 @@ st.set_page_config(
 
 # --- Custom Sidebar Logo + Background ---
 st.sidebar.image("GreenPrint_Logo.png", use_column_width=True)
-st.sidebar.markdown(
+
+st.markdown(
     """
     <style>
-        [data-testid="stSidebar"]::before {
-            content: "";
-            display: block;
-            background-image: url('https://raw.githubusercontent.com/GauriBramhankar/New_Carbon_Footprint/blob/main/GreenPrint_Logo.png');
-            background-size: 90% auto;
-            background-repeat: no-repeat;
-            background-position: center;
-            height: 180px;
-            margin: 1.5rem auto -4rem auto;
-        }
         section[data-testid="stSidebar"] {
             background-color: #ececec;
         }
+
         .stApp {
             background-color: white;
         }
