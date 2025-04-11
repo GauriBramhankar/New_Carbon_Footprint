@@ -8,9 +8,10 @@ st.set_page_config(
     layout="centered"
 )
 
-# --- Custom Sidebar Logo + Background ---
-st.sidebar.image("GreenPrint_Logo.png", use_column_width=True)
+# --- Logo at Top of Sidebar (local image) ---
+st.sidebar.image("GreenPrint_Logo.png", use_container_width=True)
 
+# --- Optional: Background Colors ---
 st.markdown(
     """
     <style>
@@ -25,6 +26,7 @@ st.markdown(
     """,
     unsafe_allow_html=True
 )
+
 # --- Page Title ---
 st.title("Welcome to GreenPrint")
 st.subheader("Your Personal Carbon Footprint Tracker")
