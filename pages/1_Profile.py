@@ -20,7 +20,7 @@ st.sidebar.markdown(
             background-size: 90% auto;
             background-repeat: no-repeat;
             background-position: center;
-            height: 50px;
+            height: 180px;
             margin: 1.5rem auto -4rem auto;  /* SUPER tight top & bottom spacing */
         }
 
