@@ -8,11 +8,11 @@ st.set_page_config(
     layout="centered"
 )
 
-# --- Logo at Top of Sidebar ---
+# --- Logo at Top of Sidebar  ---
 st.sidebar.markdown(
     """
-    <div style="text-align: center; margin-bottom: 1rem; position: relative;">
-        <img src="GreenPrint_Logo.png" width="180">
+    <div style="text-align: center; margin-bottom: 1rem;">
+        <img src="GreenPrint_Logo.png" width="180" style="display: block; margin-left: auto; margin-right: auto;">
     </div>
     """,
     unsafe_allow_html=True
@@ -30,18 +30,11 @@ st.markdown(
         .stApp {
             background-color: white;
         }
-
-        /* Ensure the sidebar logo is centered and at the top */
-        .css-1d391kg {  /* Adjust this class to position the logo properly */
-            position: absolute;
-            top: 0;
-            width: 100%;
-            text-align: center;
-        }
     </style>
     """,
     unsafe_allow_html=True
 )
+
 
 # --- Page Title ---
 st.title("Welcome to GreenPrint")
