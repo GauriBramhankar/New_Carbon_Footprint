@@ -10,17 +10,17 @@ st.set_page_config(
 )
 
 # --- Force Logo to Appear at Top of Sidebar ---
-st.sidebar.markdown(
+st.markdown(
     """
     <style>
         [data-testid="stSidebar"]::before {
             content: "";
             display: block;
-            background-image: url('https://raw.github.com/GauriBramhankar/New_Carbon_Footprint/blob/main/GreenPrint_Logo.png');
-            background-size: 90% auto;
+            background-image: url('https://raw.githubusercontent.com/GauriBramhankar/New_Carbon_Footprint/main/GreenPrint_Logo.png');
+            background-size: 70% auto;
             background-repeat: no-repeat;
             background-position: center;
-            height: 180px;
+            height: 200px;
             margin: 1.5rem auto -4rem auto;  /* SUPER tight top & bottom spacing */
         }
 
