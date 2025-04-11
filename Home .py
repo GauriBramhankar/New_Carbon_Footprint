@@ -9,18 +9,34 @@ st.set_page_config(
 )
 
 # --- Logo at Top of Sidebar (local image) ---
-st.sidebar.image("GreenPrint_Logo.png", use_container_width=True)
+st.sidebar.markdown(
+    """
+    <div style="text-align: center; margin-bottom: 1rem; position: relative;">
+        <img src="GreenPrint_Logo.png" width="180">
+    </div>
+    """,
+    unsafe_allow_html=True
+)
 
-# --- Optional: Background Colors ---
+# --- Background Colors and Styling for Sidebar ---
 st.markdown(
     """
     <style>
         section[data-testid="stSidebar"] {
             background-color: #ececec;
+            padding-top: 1rem;  /* Space for the logo at the top */
         }
 
         .stApp {
             background-color: white;
+        }
+
+        /* Ensure the sidebar logo is centered and at the top */
+        .css-1d391kg {  /* Adjust this class to position the logo properly */
+            position: absolute;
+            top: 0;
+            width: 100%;
+            text-align: center;
         }
     </style>
     """,
