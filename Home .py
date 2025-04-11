@@ -9,6 +9,7 @@ st.set_page_config(
 )
 
 # --- Custom Sidebar Logo + Background ---
+st.sidebar.image("GreenPrint_Logo.png", use_column_width=True)
 st.sidebar.markdown(
     """
     <style>
