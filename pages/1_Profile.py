@@ -16,7 +16,8 @@ st.sidebar.markdown(
         [data-testid="stSidebar"]::before {
             content: "";
             display: block;
-            background-image: url('https://raw.githubusercontent.com/GauriBramhankar/New_Carbon_Footprint/main/GreenPrint_logo.png');
+            logo = "https://raw.githubusercontent.com/GauriBramhankar/New_Carbon_Footprint/main/GreenPrint_logo.png"
+            st.sidebar.image(logo)
             background-size: 90% auto;
             background-repeat: no-repeat;
             background-position: center;
