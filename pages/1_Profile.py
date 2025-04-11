@@ -9,22 +9,14 @@ st.set_page_config(
     layout="centered"
 )
 
-# --- Force Logo to Appear at Top of Sidebar ---
+# --- Add Logo Image at Top of Sidebar ---
+logo_url = "https://raw.githubusercontent.com/GauriBramhankar/New_Carbon_Footprint/main/GreenPrint_logo.png"
+st.sidebar.image(logo_url, use_column_width=True)
+
+# --- Custom CSS Styling ---
 st.sidebar.markdown(
     """
     <style>
-        [data-testid="stSidebar"]::before {
-            content: "";
-            display: block;
-            logo = "https://raw.githubusercontent.com/GauriBramhankar/New_Carbon_Footprint/main/GreenPrint_logo.png"
-            st.sidebar.image(logo)
-            background-size: 90% auto;
-            background-repeat: no-repeat;
-            background-position: center;
-            height: 140px;
-            margin: 1.5rem auto -4rem auto;  /* SUPER tight top & bottom spacing */
-        }
-
         section[data-testid="stSidebar"] {
             background-color: #d6f5ec;
         }
