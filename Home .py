@@ -8,23 +8,23 @@ st.set_page_config(
     layout="centered"
 )
 
-# --- Logo at Top of Sidebar  ---
-st.sidebar.markdown(
-    """
-    <div style="text-align: center; margin-bottom: 1rem;">
-        <img src="GreenPrint_Logo.png" width="180" style="display: block; margin-left: auto; margin-right: auto;">
-    </div>
-    """,
-    unsafe_allow_html=True
-)
-
-# --- Background Colors and Styling for Sidebar ---
+# --- Force Logo to Appear at Top of Sidebar ---
 st.markdown(
     """
     <style>
+        [data-testid="stSidebar"]::before {
+            content: "";
+            display: block;
+            background-image: url('https://raw.githubusercontent.com/GauriBramhankar/New_Carbon_Footprint/main/GreenPrint_Logo.png');
+            background-size: 90% auto;
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 180px;
+            margin: 1.5rem auto -4rem auto;  /* SUPER tight top & bottom spacing */
+        }
+
         section[data-testid="stSidebar"] {
             background-color: #ececec;
-            padding-top: 1rem;  /* Space for the logo at the top */
         }
 
         .stApp {
@@ -34,7 +34,6 @@ st.markdown(
     """,
     unsafe_allow_html=True
 )
-
 
 # --- Page Title ---
 st.title("Welcome to GreenPrint")
