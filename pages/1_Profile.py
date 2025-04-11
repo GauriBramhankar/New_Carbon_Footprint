@@ -10,7 +10,7 @@ st.set_page_config(
 )
 
 # --- Force Logo to Appear at Top of Sidebar ---
-st.markdown(
+st.sidebar.markdown(
     """
     <style>
         [data-testid="stSidebar"]::before {
