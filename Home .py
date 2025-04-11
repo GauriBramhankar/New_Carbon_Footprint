@@ -8,7 +8,7 @@ st.set_page_config(
     layout="centered"
 )
 
-# --- Logo at Top of Sidebar (local image) ---
+# --- Logo at Top of Sidebar ---
 st.sidebar.markdown(
     """
     <div style="text-align: center; margin-bottom: 1rem; position: relative;">
