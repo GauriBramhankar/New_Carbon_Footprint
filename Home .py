@@ -19,7 +19,7 @@ st.markdown(
             background-size: 90% auto;
             background-repeat: no-repeat;
             background-position: center;
-            height: 180px;
+            height: 200px;
             margin: 1.5rem auto -4rem auto;  /* SUPER tight top & bottom spacing */
         }
 
