@@ -87,8 +87,8 @@ def init_session_state():
 init_session_state()
 
 # --- Load Emission Data ---
-CSV_URL = "https://drive.google.com/uc?export=download&id=1PWeBZKB6adZKORvtMDLFwCX__gfzH33g"
-PER_CAPITA_URL = "https://raw.githubusercontent.com/keanyaoha/Final_Project_WBS/main/per_capita_filtered_monthly.csv"
+CSV_URL = "https://drive.google.com/file/d/1yK_J9VI8Wm1WxDViFaI6oKIbzQmtXGHn/view?usp=sharing"
+PER_CAPITA_URL = "Data/emission_factor_formated.csv"
 
 @st.cache_data
 def load_data(csv_url, per_capita_url):
